@@ -153,3 +153,27 @@ a:hover {
   height: 330px;
   background-color: gray;
 }
+
+/*Books*/
+.collection {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 50px;
+}
+.c-img {
+  width: 120px;
+  height: 180px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  margin-bottom: 16px;
+}
+.collection-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+/*Book Detail Page*/

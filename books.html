@@ -7,32 +7,75 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GjRAD@24,400,0,0"
     />
   </head>
   <body>
-    <nav>
-      <div class="logo">Anbeb Books.</div>
-      <div class="other">
-        <div class="links">
-          <a href="home.html">Home</a>
-          <a href="books.html" class="active">Books</a>
-          <a href="genres.html">Genres</a>
-          <a href="articles.html">Articles</a>
+    <header>
+      <nav>
+        <div class="logo">Anbeb Books.</div>
+        <div class="other">
+          <div class="links">
+            <a href="home.html">Home</a>
+            <a href="books.html" class="active">Books</a>
+            <a href="genres.html">Genres</a>
+            <a href="articles.html">Articles</a>
+          </div>
+          <div class="search">
+            <input type="text" id="search-bar" placeholder="Search" />
+            <button id="search-btn">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+          </div>
+          <div id="bag" onclick="window.location.href='bag.html'">
+            <img src="assets/icons/bag-icon.png" alt="bag-button" />
+          </div>
+          <div id="profile">
+            <img src="assets/icons/profile-icon.png" alt="" />
+          </div>
         </div>
-        <div class="search">
-          <input type="text" id="search-bar" placeholder="Search" />
-          <button id="search-btn">
-            <span class="material-symbols-outlined"> search </span>
-          </button>
-        </div>
-        <div id="bag" onclick="window.location.href='bag.html'">
-          <img src="assets/icons/bag-icon.png" alt="bag-button" />
-        </div>
-        <div id="profile">
-          <img src="assets/icons/profile-icon.png" alt="" />
-        </div>
+      </nav>
+    </header>
+    <main style="padding-top: 100px;">
+      <div class="collection-card">
+        <p class="collection-title">Most Rated</p>
+        <div class="collection">
+          <div class="c-img" id="mr-1"></div>
+          <div class="c-img" id="mr-2"></div>
+          <div class="c-img" id="mr-3"></div>
+          <div class="c-img" id="mr-4"></div>
+          <div class="c-img" id="mr-5"></div>
+          <div class="c-img" id="mr-6"></div>
+          <div class="c-img" id="mr-7"></div>
+          <div class="c-img" id="mr-8"></div>
+
       </div>
-    </nav>
+      <div class="collection-card">
+        <p class="collection-title">Popular in Fiction</p>
+        <div class="collection">
+          <div class="c-img" id="f-1"></div>
+          <div class="c-img" id="f-2"></div>
+          <div class="c-img" id="f-3"></div>
+          <div class="c-img" id="f-4"></div>
+          <div class="c-img" id="f-5"></div>
+          <div class="c-img" id="f-6"></div>
+          <div class="c-img" id="f-7"></div>
+          <div class="c-img" id="f-8"></div>
+      </div>
+      <div class="collection-card">
+        <p class="collection-title">Popular in Romance</p>
+        <div class="collection">
+          <div class="c-img" id="r-1"></div>
+          <div class="c-img" id="r-2"></div>
+          <div class="c-img" id="r-3"></div>
+          <div class="c-img" id="r-4"></div>
+          <div class="c-img" id="r-5"></div>
+          <div class="c-img" id="r-6"></div>
+          <div class="c-img" id="r-7"></div>
+          <div class="c-img" id="r-8"></div>
+      </div>
+      
+    </main>
+    <script src="js/book.js"></script>
   </body>
 </html>
